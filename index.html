@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word Guessing Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link styles css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+</head>
+
+<body onload="startUp()">
+    <div class="container">
+            <!-----------NAVBAR--------------->
+            <div class="topnav">
+                    <a class="active">Raymond Province</a>
+                    <a class="header1" href="about.html">About</a>
+                    <a class="header1" href="portfolio.html">Portfolio</a>
+                    <a class="header1" href="contact.html">Contact</a>
+                  </div>
+
+        <h1>The Word Guessing Game for anglers!</h1>
+        <h3>All words are fishing related! If you have any suggestions please let me know at</h3>
+        <p id="answer"></p>
+        <p>To start the game enter a letter and click submit</p>
+        <input type="text" id="letter">
+        <input type="button" value="letter" onclick="Letter()" />
+        <p id="counter"></p>
+        <p id="stat"></p>
+    </div>
+
+    <footer>This was made by Ray Province Copyright HitFish.</footer>
+</body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
