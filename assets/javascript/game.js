@@ -4,10 +4,9 @@
 //Correct guess and incorrect guess
 
 //create the array
-const words = ["rod", "reel", "pole", "bass", "trout", "perch", "lipless crank", "square bill", "stick bait", "jerk bait", "worms", "grubs", "poontoon", "bass tracker", "ice fishing"];
 
 //choose word randomly
-var randomWordArray = ["rod", "reel", "pole", "bass", "trout", "perch", "lipless crank", "square bill", "stick bait", "jerk bait", "worms", "grubs", "poontoon", "bass tracker", "ice fishing"];
+var randomWordArray = ["rod", "reel", "pole", "bass", "trout", "perch", "liplesscrank", "squarebill", "stick bait", "jerkbait", "worms", "grubs", "poontoon", "basstracker", "icefishing", "spoons", "castmaster", "bassmaster"];
 var randomWord = randomWordArray[Math.floor(Math.random() * randomWordArray.length)];
 var s;
 var count = 10;
@@ -31,7 +30,7 @@ if (letter.length > 0) {
         }
     }
     count--
-    document.getElementById("counter").innerHTML = "Number of trys: " + count;
+    document.getElementById("counter").innerHTML = "Number of trys left: " + count;
     document.getElementById("answer").innerHTML = answerArray.join(" ");
 }
 if (count < 5 ) {
@@ -40,6 +39,6 @@ if (count < 5 ) {
 if (answerArray.indexOf('_') == -1) {
     document.getElementById("stat").innerHTML = "You Win!!";
 } else if (count <= 0) {
-    document.getElementById("stat").innerHTML = "You Lose";
+    document.write('<style>html{background-image:url("../images/you-lose.jpg")}</style><h2>You Lose</h2><br><p>Please refresh page to play again!</p>');
 }
 }

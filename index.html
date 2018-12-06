@@ -8,32 +8,32 @@
     <!-- Link styles css -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 
 
 
 </head>
 
 <body onload="startUp()">
+    <div class="header"><h1>The Word Guessing Game for Anglers!</h1></div>
+    <br>
     <div class="container">
-            <!-----------NAVBAR--------------->
-            <div class="topnav">
-                    <a class="active">Raymond Province</a>
-                    <a class="header1" href="about.html">About</a>
-                    <a class="header1" href="portfolio.html">Portfolio</a>
-                    <a class="header1" href="contact.html">Contact</a>
-                  </div>
-
-        <h1>The Word Guessing Game for anglers!</h1>
-        <h3>All words are fishing related! If you have any suggestions please let me know at</h3>
+        <h3>All words are fishing related!</h3>
+        <br>
         <p id="answer"></p>
+        <br>
         <p>To start the game enter a letter and click submit</p>
         <input type="text" id="letter">
         <input type="button" value="letter" onclick="Letter()" />
+        <br>
         <p id="counter"></p>
         <p id="stat"></p>
     </div>
-
-    <footer>This was made by Ray Province Copyright HitFish.</footer>
+    <br>
+<audio controls>
+    <source src="assets/sound/Bill Dance Theme Song with Lyrics.mp3" type="audio/mp3">
+</audio>
+    <div class="footer">This was made by Ray Province<br>Copyright 2018 &#169; HitFish</div>
 </body>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
